@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>jQuery app event order</title>
+  <script src="jquery-1.11.0.min.js"></script>
+  <script>
+    $(function () {
+      $('.content').on('click', function () {
+        console.log('click content')
+        })
+      $('.item').on('click', function () {
+        console.log('click item')
+        })
+    })
+  </script>
+  <style>
+    .content { position: relative; } 
+    .thumbWrap { display: inline-block; }
+    .thumb { height: 140px; width: 140px; background-size: contain; background-position: center center; display: block; }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="thumbWrap item">
+      <i class="thumb" style="background-image:url('http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/320px-Hopetoun_falls.jpg');"></i>
+    </div>
+  </div>
+</body>
+</html>
