@@ -1,7 +1,7 @@
 meteor-click-event-order-test
 =============================
 
-Reproduction of event firing order difference between Blaze and previous Meteor versions
+Reproduction of event firing order difference between Blaze, previous Meteor versions, and plain jQuery.
 
 Steps:
 
@@ -10,8 +10,21 @@ Steps:
 $ git clone https://github.com/alanning/meteor-click-event-order-test.git
 ```
 
+* Run pure jQuery app and click picture.
+  ```
+  $ cd meteor-click-event-order-test/jqueryApp
+  $ python webserver.py
+  $ open http://localhost:8000/test.html
+  ```
+* Verify browser console output:
+```
+  click item
+  click content
+```
+* Stop app
 * Run app and click picture.
   ```
+  $ cd ../meteorApp
   $ meteor --release 0.7.2
   ```
 * Verify browser console output:
