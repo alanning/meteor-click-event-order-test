@@ -1,21 +1,21 @@
 if (Meteor.isClient) {
   Template.photos.rendered = function() {
-		var el = this.find(".content");
+		var el = this.find(".parent");
 		if(el) {
 			$(el).on('click', function(evt) {
 				//event.stopPropagation();
 				//evt.stopPropagation();
-				console.log('click content via rendered')
+				console.log('click parent via rendered')
 			});
 		}
 	}
 
   Template.photos.events({
-    'click .content' : function () {
-      console.log('click content via event')
+    'click .parent' : function () {
+      console.log('click parent via event')
     },
-		'click .item' : function(){
-      console.log('click item')
+		'click .child' : function(){
+      console.log('click child')
 		}
   });
 }

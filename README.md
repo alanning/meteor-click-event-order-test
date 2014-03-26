@@ -18,11 +18,11 @@ $ git clone https://github.com/alanning/meteor-click-event-order-test.git
 ```
 * Verify browser console output:
 ```
-click item direct
-click item content delegate
-click content direct
-click item body delegate
-click content body delegate
+click child direct
+click child parent delegate
+click parent direct
+click child body delegate
+click parent body delegate
 ```
 * Stop app
 * Run app and click picture.
@@ -32,9 +32,9 @@ click content body delegate
 ```
 * Verify browser console output:
 ```
-  click item
-  click content via rendered
-  click content via event
+  click child
+  click parent via rendered
+  click parent via event
 ```
 * Stop app
 * Run app and click picture.
@@ -43,7 +43,7 @@ click content body delegate
 ```
 * Verify browser console output:
 ```
-click content via rendered
-click item
-click content via event 
+click parent via rendered
+click child
+click parent via event 
 ```

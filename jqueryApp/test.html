@@ -4,32 +4,32 @@
   <script src="jquery-1.11.0.min.js"></script>
   <script>
     $(function () {
-      $('.content').on('click', '.item', function () {
-        console.log('click item content delegate')
+      $('.parent').on('click', '.child', function () {
+        console.log('click child parent delegate')
         })
-      $('body').on('click', '.content', function () {
-        console.log('click content body delegate')
+      $('body').on('click', '.parent', function () {
+        console.log('click parent body delegate')
         })
-      $('body').on('click', '.item', function () {
-        console.log('click item body delegate')
+      $('body').on('click', '.child', function () {
+        console.log('click child body delegate')
         })
-      $('.content').on('click', function () {
-        console.log('click content direct')
+      $('.parent').on('click', function () {
+        console.log('click parent direct')
         })
-      $('.item').on('click', function () {
-        console.log('click item direct')
+      $('.child').on('click', function () {
+        console.log('click child direct')
         })
     })
   </script>
   <style>
-    .content { position: relative; } 
+    .parent { position: relative; } 
     .thumbWrap { display: inline-block; }
     .thumb { height: 140px; width: 140px; background-size: contain; background-position: center center; display: block; }
   </style>
 </head>
 <body>
-  <div class="content">
-    <div class="thumbWrap item">
+  <div class="parent">
+    <div class="thumbWrap child">
       <i class="thumb" style="background-image:url('http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/320px-Hopetoun_falls.jpg');"></i>
     </div>
   </div>
