@@ -18,8 +18,11 @@ $ git clone https://github.com/alanning/meteor-click-event-order-test.git
 ```
 * Verify browser console output:
 ```
-  click item
-  click content
+click item direct
+click item content delegate
+click content direct
+click item body delegate
+click content body delegate
 ```
 * Stop app
 * Run app and click picture.
