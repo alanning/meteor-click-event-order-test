@@ -11,11 +11,11 @@ $ git clone https://github.com/alanning/meteor-click-event-order-test.git
 ```
 
 * Run pure jQuery app and click picture.
-  ```
+```
   $ cd meteor-click-event-order-test/jqueryApp
   $ python webserver.py
   $ open http://localhost:8000/test.html
-  ```
+```
 * Verify browser console output:
 ```
   click item
@@ -23,10 +23,10 @@ $ git clone https://github.com/alanning/meteor-click-event-order-test.git
 ```
 * Stop app
 * Run app and click picture.
-  ```
+```
   $ cd ../meteorApp
   $ meteor --release 0.7.2
-  ```
+```
 * Verify browser console output:
 ```
   click item
@@ -35,9 +35,9 @@ $ git clone https://github.com/alanning/meteor-click-event-order-test.git
 ```
 * Stop app
 * Run app and click picture.
-  ```
+```
   $ meteor --release 0.8.0-rc1
-  ```
+```
 * Verify browser console output:
 ```
 click content via rendered
