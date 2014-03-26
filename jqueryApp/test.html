@@ -4,11 +4,20 @@
   <script src="jquery-1.11.0.min.js"></script>
   <script>
     $(function () {
+      $('.content').on('click', '.item', function () {
+        console.log('click item content delegate')
+        })
+      $('body').on('click', '.content', function () {
+        console.log('click content body delegate')
+        })
+      $('body').on('click', '.item', function () {
+        console.log('click item body delegate')
+        })
       $('.content').on('click', function () {
-        console.log('click content')
+        console.log('click content direct')
         })
       $('.item').on('click', function () {
-        console.log('click item')
+        console.log('click item direct')
         })
     })
   </script>
